@@ -1,0 +1,32 @@
+/* clientes */
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    .card{
+        background: $bg_rojo;
+        display: flex;
+        width: 46%;
+        height: 200px;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 5px;
+        box-shadow: 0 0 6px 0 black;
+        img{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border: 3px solid $bg_blanco;
+            border-radius: 50px;
+            display: block;
+        }
+        .contenido-texto-card{
+            width: 60%;
+            color: $bg_blanco;
+            p{
+                font-weight: 300;
+                padding-top: 10px;
+            }
+        }
+    }
+}

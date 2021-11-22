@@ -1,0 +1,60 @@
+header{
+    width: 100%;
+    height: 800px;
+    background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(187, 95%, 59%, 0.685), hsla(229, 93%, 37%, 0.61)), url(../img/Portada.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(187, 95%, 59%, 0.685), hsla(229, 93%, 37%, 0.61)), url(../img/Portada.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    .logo-DL{
+        width: 200px;
+        margin-left: 15px;
+        padding-top: 15px;
+    }
+    .textos-header{
+        display: flex;
+        height: 430px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        h1{
+            font-size: 50px;
+            color: rgb(255, 255, 255);
+        }
+        h2{
+            font-size: 30px;
+            font-weight: 300;
+            color: rgb(255, 255, 255);
+        }
+    }
+}
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    a{
+        color: $bg_blanco;
+        font-weight: 300;
+        text-decoration: none;
+        margin-right: 20px;
+        font-size: 1.5rem;
+        &:hover{
+            color: rgb(17, 13, 236);
+            font-weight: bold;
+            font-size: 2rem;
+            text-decoration: none;
+            margin-right: 10px;
+            text-decoration: underline;
+        }
+    }
+    .wave{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}

@@ -1,0 +1,419 @@
+@charset "UTF-8";
+header {
+  width: 100%;
+  height: 800px;
+  background: #f12711;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(51, 227, 250, 0.685), rgba(7, 39, 182, 0.61)), url(../img/Portada.jpg);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(51, 227, 250, 0.685), rgba(7, 39, 182, 0.61)), url(../img/Portada.jpg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; }
+  header .logo-DL {
+    width: 200px;
+    margin-left: 15px;
+    padding-top: 15px; }
+  header .textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; }
+    header .textos-header h1 {
+      font-size: 50px;
+      color: white; }
+    header .textos-header h2 {
+      font-size: 30px;
+      font-weight: 300;
+      color: white; }
+
+nav {
+  text-align: right;
+  padding: 30px 50px 0 0;
+  position: absolute;
+  top: 0;
+  right: 0; }
+  nav a {
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1.5rem; }
+    nav a:hover {
+      color: #110dec;
+      font-weight: bold;
+      font-size: 2rem;
+      text-decoration: none;
+      margin-right: 10px;
+      text-decoration: underline; }
+  nav .wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+
+/* main */
+.contenedor-sobre-nosotros {
+  display: flex;
+  justify-content: space-evenly; }
+  .contenedor-sobre-nosotros .Imagen-about-us {
+    width: 40%; }
+  .contenedor-sobre-nosotros .contenido-textos {
+    width: 40%; }
+    .contenedor-sobre-nosotros .contenido-textos h3 {
+      margin-bottom: 15px; }
+      .contenedor-sobre-nosotros .contenido-textos h3 span {
+        background: crimson;
+        color: white;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        padding: 2px;
+        box-shadow: 0 0 6px 0 black;
+        margin-right: 5px; }
+    .contenedor-sobre-nosotros .contenido-textos p {
+      padding: 0 0 30px 15px;
+      font-weight: 300;
+      text-align: justify; }
+
+/* galería */
+.portafolio {
+  background: #f2f2f2; }
+  .portafolio .galeria-port {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+    .portafolio .galeria-port .imagen-port {
+      width: 24%;
+      margin-bottom: 10px;
+      height: 230px;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5); }
+      .portafolio .galeria-port .imagen-port img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block; }
+      .portafolio .galeria-port .imagen-port .hover-galeria {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        transform: scale(0);
+        background: #dc143cad;
+        transition: transform .5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        .portafolio .galeria-port .imagen-port .hover-galeria img {
+          width: 100px; }
+        .portafolio .galeria-port .imagen-port .hover-galeria p {
+          color: white;
+          margin: 0 5px 20px 5px;
+          text-align: center; }
+    .portafolio .galeria-port .imagen-port:hover .hover-galeria {
+      transform: scale(1); }
+
+/* clientes */
+.cards {
+  display: flex;
+  justify-content: space-evenly; }
+  .cards .card {
+    background: crimson;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 black; }
+    .cards .card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border: 3px solid white;
+      border-radius: 50px;
+      display: block; }
+    .cards .card .contenido-texto-card {
+      width: 60%;
+      color: white; }
+      .cards .card .contenido-texto-card p {
+        font-weight: 300;
+        padding-top: 10px; }
+
+/* nuestros servicios */
+.about-services {
+  background: #f2f2f2;
+  padding-bottom: 30px; }
+  .about-services .servicio-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .about-services .servicio-cont .servicio-ind {
+      width: 28%;
+      text-align: center; }
+      .about-services .servicio-cont .servicio-ind img {
+        width: 90%; }
+      .about-services .servicio-cont .servicio-ind h3 {
+        margin: 10px 0; }
+      .about-services .servicio-cont .servicio-ind p {
+        font-weight: 300;
+        text-align: center; }
+
+/* footer */
+footer {
+  background: #0f0566;
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden; }
+  footer .contenedor-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid white; }
+    footer .contenedor-footer .content-foo {
+      text-align: center; }
+      footer .contenedor-footer .content-foo h4 {
+        color: white;
+        border-bottom: 1px solid crimson;
+        padding-bottom: 5px;
+        margin-bottom: 10px; }
+      footer .contenedor-footer .content-foo p {
+        color: #e7e7e7; }
+  footer .titulo-final {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  body .contenedor {
+    padding: 40px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden; }
+  body .titulo {
+    color: crimson;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px; }
+
+/* CONOCENOS  */
+.header-conocenos {
+  width: 100%;
+  height: 800px;
+  background: #f12711;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(250, 231, 56, 0.685), rgba(79, 158, 5, 0.61)), url(../img/Portada_conocenos.jpg);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(250, 231, 56, 0.685), rgba(79, 158, 5, 0.61)), url(../img/Portada_conocenos.jpg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; }
+
+/* OTROS SERVICIOS */
+.header-editorial {
+  width: 100%;
+  height: 800px;
+  background: #f12711;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(56, 250, 114, 0.685), rgba(5, 158, 158, 0.61)), url(../img/Portada_editorial.png);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(56, 250, 114, 0.685), rgba(5, 158, 158, 0.61)), url(../img/Portada_editorial.png);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; }
+
+/* GRAN FORMATO */
+.header-granformato {
+  width: 100%;
+  height: 800px;
+  background: #f12711;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(250, 51, 101, 0.685), rgba(162, 7, 182, 0.61)), url(../img/Portada_granformato.jpeg);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(250, 51, 101, 0.685), rgba(162, 7, 182, 0.61)), url(../img/Portada_granformato.jpeg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; }
+
+.portafolio-lonas {
+  background: #f2f2f2;
+  margin-bottom: 20px;
+  padding-bottom: 20px; }
+  .portafolio-lonas .contenedor-slider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+    .portafolio-lonas .contenedor-slider .slider {
+      display: flex;
+      width: 48.7%;
+      overflow-x: scroll;
+      scroll-snap-type: mandatory;
+      border-radius: 2px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+      .portafolio-lonas .contenedor-slider .slider .lona {
+        width: 1000px;
+        object-fit: cover;
+        scroll-snap-align: center; }
+      .portafolio-lonas .contenedor-slider .slider .titulo-lona {
+        text-align: center; }
+
+.titulo-gran-formato {
+  color: crimson;
+  font-size: 30px;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 15px;
+  margin: 20px 0; }
+
+.contenedor-trovisel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .contenedor-trovisel .new-cards {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 10px 0; }
+    .contenedor-trovisel .new-cards img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover; }
+
+/* CONTACTANOS AQUI  */
+.header-contacto {
+  width: 100%;
+  height: 800px;
+  background: #f12711;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(163, 56, 250, 0.685), rgba(158, 5, 76, 0.61)), url(../img/Portada_contacto.jpeg);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(163, 56, 250, 0.685), rgba(158, 5, 76, 0.61)), url(../img/Portada_contacto.jpeg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; }
+
+.content {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em; }
+  .content .logo {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 10px;
+    padding: 10px; }
+    .content .logo .coloreado {
+      color: crimson; }
+  .content .contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.685); }
+    .content .contact-wrapper * {
+      padding: .8em; }
+      .content .contact-wrapper * .contact-form {
+        background: #f2f2f2; }
+        .content .contact-wrapper * .contact-form form {
+          display: grid;
+          grid-template-columns: 1fr 1fr; }
+          .content .contact-wrapper * .contact-form form .block {
+            grid-column: 1 / 3; }
+          .content .contact-wrapper * .contact-form form .parrafo {
+            margin: 0;
+            padding: 1em; }
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: .7em;
+  border: gray;
+  background: none;
+  outline: none;
+  border-bottom: 1px solid crimson; }
+
+.contact-form form button {
+  background-color: crimson;
+  border: none;
+  text-transform: uppercase;
+  padding: 1em;
+  color: white; }
+  .contact-form form button:hover, .contact-form form button:focus {
+    background: black;
+    color: crimson;
+    transition: background-color 1s ease-out;
+    outline: none; }
+
+.contact-info {
+  background: white; }
+  .contact-info .h42,
+  .contact-info ul,
+  .contact-info .parrafo {
+    text-align: center;
+    margin: 0 0 1rem 0; }
+
+.contact-info ul {
+  list-style: none;
+  padding: 0; }
+  .contact-info ul li {
+    padding: .3em; }
+
+/* QUERIES */
+@media screen and (max-width: 1100px) {
+  header {
+    background-position: center; }
+  nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: right; }
+  nav a {
+    padding: 3px; }
+  .sobre-nosotros .contenido-textos {
+    width: 80%; }
+  .Imagen-about-us {
+    width: 80%; }
+  .imagen-port {
+    width: 44%;
+    height: 250px; }
+  .cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .cards .card {
+    width: 60%; }
+  .cards .card:first-child {
+    margin-bottom: 30px; }
+  .servicio-cont {
+    justify-content: center;
+    flex-direction: column; }
+  .servicio-ind {
+    width: 100%;
+    text-align: center; }
+  .servicio-ind:nth-child(1), .servicio-ind:nth-child(2) {
+    margin-bottom: 60px; }
+  .servicio-ind img {
+    width: 90%; } }
